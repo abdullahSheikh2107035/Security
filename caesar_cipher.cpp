@@ -15,18 +15,20 @@ string encrypt(string s,int k){
     if(isupper(s[i])){
       res+=char(mod((ll(s[i])+k-65),26)+65);
     }
-    else{
+    else if(islower(s[i])){
       res+=char(mod((ll(s[i])+k-97),26)+97);
     }
-    
+    else{
+      res+=s[i];
+    }
   }
   return res;
 }
 int main() {
   string s;
-  cin >> s;
+  getline(cin,s);
   ll k;
-  cin >> k;
+  cin>>k;
   cout<<"Message :" <<s<<endl;
   string en=encrypt(s,k);
   string dec=encrypt(en,-k);

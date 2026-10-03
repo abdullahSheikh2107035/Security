@@ -106,7 +106,7 @@ int main(){
     cout<<"ciphertext: " << c << endl;
     cout<<"decrypted message: " << dec << endl;
     if (dec == m) {
-        cout << "Valid private key d :"<<i<<"found"<< endl;
+        cout << "Valid private key d :"<<i<<" found"<< endl;
     }
 
     return 0;

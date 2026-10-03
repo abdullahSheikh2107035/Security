@@ -67,7 +67,8 @@ int main(){
     
     string m,k;
     cout<<"Enter message and key"<<endl;
-    cin>>m>>k;
+    getline(cin,m);
+    getline(cin,k);
     cout<<"Message :" <<m<<endl;
     cout<<"Hex MESSAGE :"<<toHex(m)<<endl;
     string en=encrypt(m,k);
