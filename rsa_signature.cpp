@@ -132,7 +132,7 @@ int main()
     ll en = modpow(m, er, nr);
     ll sig = modpow(m, ds, ns);
     ll ver = modpow(sig, es, ns);
-    if (sig == m)
+    if (ver == m)
         cout << "Signer Verified" << endl;
     else
         cout << "Illegitamate signer" << endl;
