@@ -34,7 +34,7 @@ ll modpow(ll a,ll e,ll m){
     while (e>0)
     {
         if(mod(e,2)==1){
-            r=mod(r*r,m);
+            r=mod(r*a,m);
         }
         a=mod(a*a,m);
         e/=2;
